@@ -90,6 +90,6 @@ const images = [
   
   rendering()
 
-  const s = new SimpleLightbox('.gallery a', {captionsData: 'alt', captionDelay: '250'
+  const s = new SimpleLightbox('.gallery a', {captionsData: 'alt', captionDelay: 250
   });
   console.log(s)

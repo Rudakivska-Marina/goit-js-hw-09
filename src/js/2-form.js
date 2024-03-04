@@ -6,7 +6,7 @@ form.addEventListener('input', event => {
   const email = event.currentTarget.elements.email.value.trim();
   const message = event.currentTarget.elements.message.value.trim();
 
-  const userData = { email, message };
+  const userData = { email: email.value, message: message.value };
 
   saveToLS(keyLink, userData);
 });
@@ -36,10 +36,10 @@ function saveToLS(key, value) {
 form.addEventListener('submit', event => {
   event.preventDefault();
   const { email, message } = event.target.elements;
-  if (!email.value.trim() || !message.value.trim()) {
+  if (!email.value || !message.value) {
     return alert('form fields must be filled');
   }
-  const userData = { email, message };
+  const userData = { email: email.value, message: message.value };
   console.log(userData);
   event.target.reset();
 
