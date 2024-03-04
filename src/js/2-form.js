@@ -6,7 +6,7 @@ form.addEventListener('input', event => {
   const email = event.currentTarget.elements.email.value.trim();
   const message = event.currentTarget.elements.message.value.trim();
 
-  const userData = { email: email.value, message: message.value };
+  const userData = { email, message };
 
   saveToLS(keyLink, userData);
 });
