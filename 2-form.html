@@ -3,10 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script type="module" crossorigin src="/vanilla-app-template/assets/modulepreload-polyfill-3cfb730f.js"></script>
+    <title>Form</title>
+    
+    <script type="module" crossorigin src="/vanilla-app-template/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/modulepreload-polyfill-3cfb730f.js">
+    <link rel="stylesheet" href="/vanilla-app-template/assets/styles-446271d1.css">
   </head>
   <body>
+    <a href="./index.html">Go back</a>
+
+    <form class="hw-form" autocomplete="off">
+      <label>
+        Email
+        <input
+          type="email"
+          name="email"
+          autofocus
+          placeholder="Write your email"
+        />
+      </label>
+      <label>
+        Message
+        <textarea
+          name="message"
+          rows="10"
+          placeholder="Write your message"
+        ></textarea>
+      </label>
+      <button type="submit">Submit</button>
+    </form>
+
     
   </body>
 </html>
